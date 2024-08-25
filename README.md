@@ -1,6 +1,6 @@
 # gba-joybus-tester
 
-This is a modified version of NINJA that lets the Wii homebrew send data to the GBA and print the received values on screen. It was created to test the **LinkCube** library from [gba-link-connection](https://github.com/afska/gba-link-connection). My changes are licensed as GPL-2.0:
+This is a modified version of [NINJA](https://github.com/shonumi/ninja) that lets the Wii homebrew send data to the GBA and print the received values on screen. It was created to test the **LinkCube** library from [gba-link-connection](https://github.com/afska/gba-link-connection). My changes are licensed as GPL-2.0:
 - Initialization now uses cmd `0xff` instead of `0x00`.
 - Communication is binded with channel `0` (first GC port) instead of `1`.
 - The **+** button now increments a number, sends it (cmd `0x15`) and receives (cmd `0x14`) a 32-bit value from the GBA to print it on the screen.
